@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Titillium+Web:wght@300&display=swap');
+
+:root{
+    --main-color:black;
+
+}
+.header-logo {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 3rem;
+        text-align: center;
+        margin: 0;
+}
+
+.header-menu{
+       display: flex;
+       justify-content: space-around;
+       font-family: 'Open Sans Condensed', sans-serif;
+       font-size: smaller;
+       text-align: center;
+       padding:0;
+       list-style-type: none;
+       align-items: center;
+      
+}
+
+.header-menu li a:hover {
+    border: 1px solid var(--main-color);
+
+}
+.header-menu li a {
+    text-decoration: none;
+    color: var(--main-color);
+    padding: 5 px;
+    border: 1px solid transparent;
+  
+}
+       
+
+h5 {
+     text-align: center;
+     font-size: x-small;
+     margin: 0;
+     font-family:'Titillium Web', sans-serif;
+}
+
+

@@ -2,13 +2,21 @@
 
 :root{
     --main-color:black;
-
 }
-.header-logo {
-        font-family: 'Open Sans Condensed', sans-serif;
-        font-size: 3rem;
-        text-align: center;
-        margin: 0;
+
+body {
+    max-width: 900px;
+    margin: auto;
+    background-color: rgb(225, 228, 231);
+} 
+
+
+ .header-logo {
+        font-family: 'Open Sans Condensed', sans-serif; 
+        font-size: 4rem;
+        text-align: center; 
+        margin:0;
+         
 }
 
 .header-menu{
@@ -30,9 +38,12 @@
 .header-menu li a {
     text-decoration: none;
     color: var(--main-color);
-    padding: 5 px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     border: 1px solid transparent;
-  
+    margin-top: 3px;
 }
        
 
@@ -43,4 +54,139 @@ h5 {
      font-family:'Titillium Web', sans-serif;
 }
 
+.header-menu li a:hover {
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: rgb(199, 208, 228) ;
+}
 
+@media(min-width:600px) {
+   
+    .header-menu li a{
+        font-size: large;
+    }
+
+    .header-banner-1 {
+          background-image: url(../img/acc-square.jpg);
+          min-height:300px;
+          background-size:cover;
+          background-position: center;
+          display:flex;
+          align-items: flex-end;
+          justify-content: center;
+          flex-direction: column;
+    }
+
+    .header-banner-1 p {
+        font-size:larger;
+    }
+}
+
+.header-banner-1 {
+    background-image: url(../img/acc-square.jpg);
+    min-height: 400px;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+ 
+.header-banner-1 p {
+    font-size:small;
+    padding:1px;
+    margin:1px;
+}
+
+.header-banner-2 {
+    background-image: url(../img/acc-twisted.jpg);
+    min-height: 300px;
+    background-size:cover;
+    background-position:center;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    margin-left:5px;
+    margin-right:250px;
+    border-radius: 8em;
+    margin-bottom:0;
+}
+
+h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
+  text-align: right;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  padding-right: 100px;
+}
+
+p {
+    font-family:'Titillium Web', sans-serif;
+    font-size:larger;
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 10px;
+    margin-top:0;
+}
+.header-banner-2 p {
+    display:flex;
+    justify-content: center;
+    font-size: small;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+}
+
+h3{
+    font-family:'Titillium Web', sans-serif;
+    padding-left:100px;
+    font-size: larger;
+    padding-top: 0px;
+    padding-bottom:100px;
+}
+
+.button {
+    border-color: black;
+    color: black;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+}
+
+/* 
+ .accessory-card{
+    display: flex;
+    justify-content:center;
+}  */
+
+.accessory-card img {
+  display: block;
+  width:100%;
+  min-height: 10px;
+  border-radius: 50px;  
+}
+
+.accessory-card h3 {
+    padding-bottom:0;
+    padding-left:0;
+    text-align: center;
+}
+
+.accessory-card h4 {
+    text-align: center;
+    margin:5px;
+} */
+
+ hr{
+        border: none; 
+        color:black; 
+        background-color:black;
+        height: 2px;  
+}

@@ -21,6 +21,8 @@ body {
         font-size: 4rem;
         text-align: center; 
         margin:0;
+        padding:0;
+       
          
 }
 
@@ -33,7 +35,7 @@ body {
        padding:0;
        list-style-type: none;
        align-items: center;
-      
+       margin-top:5px;
 }
 
 .header-menu li a:hover {
@@ -75,6 +77,8 @@ h5 {
     justify-content: center;
     flex-direction: column;
     padding-top: 30px;;
+    padding: 0;
+    margin-top:15px;
 }
  
 .header-banner-1 p {
@@ -349,3 +353,155 @@ h2 {
     align-items: center;
     border-radius: 5em;
 }
+
+/* .basket {
+    width: 30px;
+    height: 30px;
+
+    
+}
+
+.instagram {
+    width: 35px;
+    height: 35px;
+ 
+}
+
+.top-header {
+    align-items: center;
+}
+ */ 
+
+ @media(max-width: 830px ) {
+    .contacts h1 {
+        text-align: center;
+        font-family:'Titillium Web', sans-serif; 
+        font-size:small;
+
+    }
+    .products-container{
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        justify-content: space-around;
+        align-items: center; 
+    }
+      
+       .banner-3 img {
+         width:300px;
+         height:400px;
+      }  
+      
+      .banner-3 h1 {
+          background: rgb(236, 241, 245);
+          display: flex;
+          text-align: center;
+      
+      }
+      
+      .banner-3 {
+          /* background-color: green; */
+          width:100%;
+          height:700px;
+          display: flex;
+          justify-content: space-between;
+          padding-top: 100px;
+      } 
+
+     .inner-text p {
+        padding-top: 100px;
+        padding-right:0px;
+        padding-left:4px;
+        font-size: smaller;
+    }
+    
+    .innertext h4 {
+        
+        text-align: end;
+        font-size: smaller;
+    }
+    
+    .signature p {
+        
+        font-family: 'Dancing Script', cursive;
+        font-size: smaller;
+    }
+      
+    .contacts h1 {
+        text-align: center;
+        font-family:'Titillium Web', sans-serif;
+        font-size: smaller;
+    
+    }
+    
+    .contacts {
+        display: flex;
+        justify-content: center;
+        /* font-family:'Titillium Web', sans-serif; */
+        padding-bottom: 100px;
+        background-color: rgb(245, 246, 247);
+    }
+    
+    
+    
+    .for-calls h2 {
+        text-align:left ;
+        padding-right:50px;
+        
+    }
+    
+    
+    
+    .for-networks{
+         padding-right:0;
+         padding-top:50px;
+         font-family:'Titillium Web', sans-serif;
+         
+    } 
+    
+    .for-calls {
+        padding-top:50px;
+    }
+    
+    .for-calls h3 {
+        font-family:'Titillium Web', sans-serif
+    }
+    
+    .fill-the-form {
+        /* background-color: violet; */
+        height:400px;
+    }
+    
+    .fill-the-form p {
+            text-align: center;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left:230px;
+        margin-top: 50px;;
+        align-items: center;
+        width: 400px;
+    }
+    
+    .form input {
+        border-radius: 5em;
+        border-color:rgb(63, 62, 62) ;
+        width:300px;
+        height:30px;
+        background-color: rgb(235, 235, 235);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .form button {
+    
+        width: 50%;
+        height: 40px;
+        margin-top: 20px;
+        align-items: center;
+        border-radius: 5em;
+    }
+  }

@@ -16,9 +16,9 @@
       <nav>
 
          <ul class="header-menu">
-            <li><a href="#accessories">Accessories</a></li>
-            <li><a href="banner-3">About us</a></li>
-            <li><a href="contacts">Contacts</a></li>
+            <li><a href="#products-list">Accessories</a></li>
+            <li><a href="#biography">About us</a></li>
+            <li><a href="#contact">Contacts</a></li>
             <li class = "basket">
                 <a href = "basket.html">
                   <ion-icon name="cart-outline"></ion-icon> Basket <span>0</span>
@@ -47,9 +47,10 @@
 
 
    </header>
-   <main class="products-container">
+   <!-- <main class="products-container"> -->
+   <section class="products-container" id = "products-list">
       <div class="accessory-card">
-         <img class="card-img-top" src="img/square-acc.jpg" alt="accessories on the book">
+         <img class="card-img-top" src="img/secretpearl.jpg" alt="accessories on the book">
          <div class="card-body">
             <div class="name-product">
                <h3>"Secret Pearl"</h3>
@@ -65,9 +66,8 @@
          </div>
       </div>
 
-
       <div class="accessory-card">
-         <img class="card-img-top" src="img/straw-acc.jpg" alt="accessories on the book">
+         <img class="card-img-top" src="img/strawcircles.jpg" alt="accessories on the book">
          <div class="card-body">
             <div class="name-product">
                <h3>"Straw Circles"</h3>
@@ -85,7 +85,7 @@
 
 
       <div class="accessory-card">
-         <img class="card-img-top" src="img/circles-acc.jpg" alt="circles accessories">
+         <img class="card-img-top" src="img/circles.jpg" alt="circles accessories">
          <div class="card-body">
             <div class="name-product">
                <h3>"Azure"</h3>
@@ -103,7 +103,7 @@
 
 
       <div class="accessory-card">
-         <img class="card-img-top" src="img/gold-acc.jpg" alt="gold accessories">
+         <img class="card-img-top" src="img/gold.jpg" alt="gold accessories">
          <div class="card-body">
             <div class="name-product">
                <h3>"Kissed by the sun"</h3>
@@ -113,7 +113,7 @@
                <h4>250 UAH</h4>
             </div>
             <div class="card-button">
-               <button type="button">Add to basket</button>
+               <button class = "add-to-basket"><a href = "#">Add to basket</a></button>
             </div>
 
          </div>
@@ -121,7 +121,7 @@
 
 
       <div class="accessory-card">
-         <img class="card-img-top" src="img/silver-acc.jpg" alt="silver small circles">
+         <img class="card-img-top" src="img/silver.jpg" alt="silver small circles">
          <div class="card-body">
             <div class="name-product">
                <h3>"Azure"</h3>
@@ -131,7 +131,7 @@
                <h4>210 UAH</h4>
             </div>
             <div class="card-button">
-               <button type="button">Add to basket</button>
+               <button class = "add-to-basket"><a href = "#">Add to basket</a></button>
             </div>
 
          </div>
@@ -139,7 +139,7 @@
 
 
       <div class="accessory-card">
-         <img class="card-img-top" src="img/bottom-ball-acc.jpg" alt=" accessories on the hand">
+         <img class="card-img-top" src="img/bottomball.jpg" alt=" accessories on the hand">
          <div class="card-body">
             <div class="name-product">
                <h3>"Kissed by the sun"</h3>
@@ -149,7 +149,7 @@
                <h4>200 UAH</h4>
             </div>
             <div class="card-button">
-               <button type="button">Add to basket</button>
+               <button class = "add-to-basket"><a href = "#">Add to basket</a></button>
             </div>
 
          </div>
@@ -157,7 +157,7 @@
 
 
       <div class="accessory-card">
-         <img class="card-img-top" src="img/twisted-acc-jeans.jpg" alt="accessories on the jeans">
+         <img class="card-img-top" src="img/jeans.jpg" alt="accessories on the jeans">
          <div class="card-body">
             <div class="name-product">
                <h3>"Perfect"</h3>
@@ -167,7 +167,7 @@
                <h4>299 UAH</h4>
             </div>
             <div class="card-button">
-               <button type="button">Add to basket</button>
+               <button class = "add-to-basket"><a href = "#">Add to basket</a></button>
             </div>
 
          </div>
@@ -175,7 +175,7 @@
 
 
       <div class="accessory-card">
-         <img class="card-img-top" src="img/double-acc.jpg" alt="two balls accessories">
+         <img class="card-img-top" src="img/double.jpg" alt="two balls accessories">
          <div class="card-body">
             <div class="name-product">
                <h3>"Double Balls"</h3>
@@ -185,19 +185,19 @@
                <h4>235 UAH</h4>
             </div>
             <div class="card-button">
-               <button type="button">Add to basket</button>
+               <button class = "add-to-basket"><a href = "#">Add to basket</a></button>
             </div>
 
          </div>
       </div>
 
-
-   </main>
-
-
+   </section>
+   <!-- </main> -->
 
 
 
+
+   <section class = "about-us" id="biography">
    <div class = "banner-3">
       <img src="img/portrait.jpg" alt="the photo of owner">
       <div class="inner-text">
@@ -209,7 +209,10 @@
          
       </div>
    </div>
-     
+</section>
+    
+<section class="get-in-touch" id="contact">
+
    <div class="contacts">
       <h1>Get in touch with us</h1>
       <div class= "for-calls">
@@ -223,6 +226,7 @@
         
    </div>
 
+   <div class = "questions">
    <form class="fill-the-form">
       <p>If you still have any questions, fill in the form and we will contact with you!</p>
       <div class="form">
@@ -232,6 +236,8 @@
          <button type="submit">Send</button>
       </div>
    </form>
+ </div>
+</section>
    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
    <script src = "js/index.js"></script> 
    <script src = "main.js"></script>

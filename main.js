@@ -17,10 +17,42 @@ let products = [
 
   {
     name: 'Azure', 
-    tag: 'azure ',
+    tag: 'circles',
+    price: 195,
+    inBasket:0
+  },
+
+  {
+    name: 'Kissed by the sun', 
+    tag: 'gold',
+    price: 195,
+    inBasket:0
+  },
+  {
+    name: 'Azure', 
+    tag: 'silver',
+    price: 195,
+    inBasket:0
+  },
+  {
+    name: 'Kissed by the sun', 
+    tag: 'bottomball',
+    price: 195,
+    inBasket:0
+  },
+  {
+    name: 'Perfect', 
+    tag: 'jeans',
+    price: 195,
+    inBasket:0
+  },
+  {
+    name: 'Double Balls', 
+    tag: 'double',
     price: 195,
     inBasket:0
   }
+
 
 ]
 
@@ -100,4 +132,46 @@ function totalCost (products) {
     
 }
 
+function displayBasket() {
+     let basketItems = localStorage.getItem("productsInBasket");
+     basketItems = JSON.parse(basketItems);
+    let productsContainer = document.querySelector(".products");
+    let basketCost = localStorage.getItem('totalCost');
+
+    console.log(basketItems);
+    if( basketItems && productsContainer ) {
+      productsContainer.innerHTML = '';
+      Object.values(basketItems).map(item => {
+        productsContainer.innerHTML += `
+        <div class = "product">
+            <ion-icon name="close-circle-outline"></ion-icon>
+             <img src = "../img/${item.tag}.jpg">  
+            <span>${item.name}</span>
+        </div>    
+        <div class = "price">${item.price},00</div>
+        <div class = "quantity">
+        <ion-icon class = "decrease" name="caret-back-outline"></ion-icon>
+           <span>${item.inBasket}</span>
+        <ion-icon class = "increase" name="caret-forward-outline"></ion-icon>   
+        </div>
+        <div class = "total">
+        ${item.inBasket * item.price},00
+        </div>
+        `;
+      })
+
+    productsContainer.innerHTML += ` 
+       <div class = "basketTotalContainer">
+       <h4 class = "basketTotalTitle">
+          Basket Total 
+       </h4>
+       <h4 class = "basketTotal">
+        ${basketCost},00
+       </h4>   
+    `
+
+    }
+}
+
 onLoadBasketNumbers ();
+displayBasket();

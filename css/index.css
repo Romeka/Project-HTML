@@ -12,6 +12,8 @@ body {
     max-width: 900px;
     margin: auto;
     background-color: rgb(225, 228, 231);
+     overflow-y: scroll;
+    scroll-behavior: smooth; 
 } 
 
 
@@ -177,7 +179,6 @@ h2 {
 .card-button{
     width: 100%;
     height: 80px;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,6 +204,16 @@ h2 {
     padding-top: 0px;
     padding-bottom:100px;
 } */
+
+.add-to-basket a {
+    color: white;
+    text-decoration: none;
+}
+
+.add-to-basket:hover {
+    background-color: rgb(155, 155, 165);
+}
+
 
 .button {
     border-color: black;
@@ -249,6 +260,7 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     justify-content: space-around;
+    
 }
 
 .card-img-top {
@@ -318,7 +330,15 @@ h2 {
 
 .fill-the-form {
     /* background-color: violet; */
-    height:400px;
+    min-height:400px;
+}
+
+.questions {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+
+
 }
 
 .fill-the-form p {
@@ -329,10 +349,10 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left:230px;
-    margin-top: 50px;;
+    /* margin-left:230px;
+    margin-top: 50px;*/
     align-items: center;
-    width: 400px;
+    
 }
 
 .form input {
@@ -372,7 +392,12 @@ h2 {
 }
  */ 
 
- @media(max-width: 830px ) {
+ @media(max-width:505px) { 
+  
+  .header-banner-2 {
+      width: 50%;
+  }
+
     .contacts h1 {
         text-align: center;
         font-family:'Titillium Web', sans-serif; 
@@ -400,11 +425,13 @@ h2 {
       }
       
       .banner-3 {
-          /* background-color: green; */
+          
           width:100%;
-          height:700px;
+          min-height:900px; 
           display: flex;
-          justify-content: space-between;
+          /* justify-content: space-between; */
+          flex-direction: column;
+          align-items: center;
           padding-top: 100px;
       } 
 
@@ -440,6 +467,7 @@ h2 {
         /* font-family:'Titillium Web', sans-serif; */
         padding-bottom: 100px;
         background-color: rgb(245, 246, 247);
+
     }
     
     
@@ -447,6 +475,8 @@ h2 {
     .for-calls h2 {
         text-align:left ;
         padding-right:50px;
+        font-size: 16px;
+        
         
     }
     
@@ -456,8 +486,13 @@ h2 {
          padding-right:0;
          padding-top:50px;
          font-family:'Titillium Web', sans-serif;
+        
          
     } 
+
+    .for-networks h2 {
+        font-size: 16px;
+    }
     
     .for-calls {
         padding-top:50px;
@@ -469,7 +504,7 @@ h2 {
     
     .fill-the-form {
         /* background-color: violet; */
-        height:400px;
+        /* height:400px; */
     }
     
     .fill-the-form p {
@@ -480,10 +515,10 @@ h2 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-left:230px;
-        margin-top: 50px;;
+        /* margin-left:230px;
+        margin-top: 50px;; */
         align-items: center;
-        width: 400px;
+        /* width: 400px; */
     }
     
     .form input {
@@ -504,61 +539,118 @@ h2 {
         align-items: center;
         border-radius: 5em;
     }
+    
   }
+
+  @media (min-width:320) {
+    
+    .products-container{
+        display: grid; 
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        justify-content: space-around;
+        align-items: center; 
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --------------------------- CARD PAGE ------------------------------- */
 
 .container-products {
-     width: 650px;
-     height:400px;
-     justify-content: space-between;
+     max-width: 650px;
+     /* height:400px; */
+     justify-content: space-around;
      margin: 0 auto;
-     margin-top:50px;
-
+     margin-top:70px;
+     display: flex;
+     flex-direction: column;
+     
 }
 
-.product-header {
-    width: 100px; 
+ .product-header { 
+    width: 100%; 
     max-width: 650px;
     display: flex;
+    align-items: center; 
     justify-content: flex-start;
     border-bottom: 4px solid lightgrey;
-    margin:0 auto;
+    margin: 0 auto;
 
 }
 
-.products-title {
-    width: 45%;
+ .products-title {
+     width: 45%; 
+     /* display: flex;
+     justify-content: flex-start; */
+    /* border-bottom: 1px solid rgb(77, 77, 77); */
+    /* margin-right:10px; */
 
 }
 
-.price {
+ .price {
     width: 15%;
-    border-bottom: 4px solid rgb(189, 197, 200);
+    /* border-bottom: 4px solid rgb(77, 77, 77);  */
     display: flex;
-    align-items:center;
+    justify-items: center;;
+   
+    
 }
 
-.quantity {
+ .quantity {
     width: 30%;
-    border-bottom:1px solid lightgrey;
+    /* border-bottom:1px solid rgb(77, 77, 77); */
     display: flex;
     align-items: center;
 
 }
 
-.total {
+ .total {
     width: 10%;
-    border-bottom: 1px solid lightgrey;
+    /* border-bottom: 1px solid lightgrey;  */
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 
 .products {
     width: 45%;
     display: flex;
+    
     justify-content: space-around;
     align-items: center;
     padding: 10px 0;
-    border-bottom: 1px solid lightgrey;
+    display: flex;
+     flex-direction: column; 
+    /* border-bottom: 1px solid lightgrey;  */
+} 
+
+.product img {
+
+    width: 150px;
+    height:150px;
+    border-radius: 10em;   
 }
+
+.container-products ion-icon {
+   font-size: 25px;
+   color: rgb(46, 45, 45);
+    margin-left: 10px; 
+    margin-right: 10px;
+   margin-bottom: 60px; 
+   cursor: pointer;
+}
+
